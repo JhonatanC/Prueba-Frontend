@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+footer{
+	background: #000000;
+	color: #fff;
+	text-align: center;
+	padding: 15px 0px;
+}
+
+/**menu de navegación**/
+.navbar {
+	background-image: url(../img/textura-menu.png);
+	height: 80px;
+	min-height: 80px !important;
+}
+.navbar-right {
+	margin-top: 15px !important;	
+}
+
+.current_page_item > a {
+	color: #1889c1 !important;
+}
+
+
+.slider{
+	background: #f2f2f2 ;
+	display: block;
+	height: 450px;
+	margin-top: -30px;
+	width: 100%;
+}
+
+/**Planes**/
+
+.planes {
+	padding: 30px 0px;
+	width: 100%;
+}
+
+.standard {
+	border: 1px solid #e3e3e3;
+}
+
+.standard h3,
+.standard p {
+	text-align: center;
+}
+
+.standard ul {
+	list-style: none;
+	padding: 0px;
+}
+
+.standard li {
+	border-bottom: 1px solid #e3e3e3;
+	color: #2e2e2f;
+	margin: 10px 0px 5px 0px;
+	padding-bottom: 4px;
+}
+
+.standard li i {
+	color: #2e2e2f;
+	padding-left: 20px;
+}
+
+.standard h3 {
+	background: #2e2e2f;
+	color: #fff;
+	font-size: 17px;
+	margin: 0px;
+	padding: 10px 10px;
+	text-transform: uppercase;
+}
+
+.standard .title-active {
+	background: #136e9a;
+}
+
+.standard .precio-active {
+	background: #1889c1;
+}
+
+.standard p {
+	background: #393a3b;
+	color: #fff;
+	font-size: 24px;
+	padding: 15px 15px;
+	font-weight: bold;
+}
+
+.sign {
+    border-radius: 3px;
+    display: block;
+    border: 0;
+    color: #fff;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+
+.sign-deactivated {
+	background: #393a3b;
+}
+
+.sign-active {
+	background: #1889c1;
+}
+
+/**Servicios**/
+.servicios{
+	background: #008ac4;
+	padding: 35px 0px;
+	width: 100%;
+}
+
+.site-white,
+.site-blue {
+	padding: 30px 40px;
+}
+
+.site-white {
+	background: #fff;
+}
+
+.site-blue {
+	color: #fff;
+	background: #009dd9;
+}
+
+.site-white .icon-desktop .fa-desktop, 
+.site-blue .icon-desktop .fa-desktop {
+	background: #f1f1f1;
+    border-radius: 50%;
+    font-size: 40px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    width: 100px;
+}
+
+.site-blue .icon-desktop .fa-desktop {
+	background: #43b2e9;
+}
+
+/**Caracteristicas**/
+.caracteristicas {
+	margin-bottom: 50px;
+	padding: 20px 0px;
+	width: 100%;
+}
+
+.content-caracteristicas {
+	background: #efefef;
+}
+
+.nav-tabs {
+	border: 0px;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+	background: #eeeeee;
+	border: 0px;
+	color: #555;
+	cursor: default;
+}
+
+.nav-tabs>li.hover>a:hover {
+	color: #393a3b !important;
+}
+
+.nav-tabs>li:hover>a:hover {
+	color: #393a3b !important;
+}
+
+.nav-tabs>li>a {
+	background: #1889c1;
+	color: #fff;
+	margin-right: 0;
+    border-radius: 0;
+}
+
+.tab-content .box {
+	background: #999999;
+	color: #fff;
+	height: 200px;
+	width: 190px;
+}
+
+.paddin-tab {
+	padding: 20px 10px;
+}
+
+/**Barra de noticias**/
+
+.twitter {
+	background: #00b2ea;
+	padding: 15px 0px;
+	width: 100%;
+}
+
+.twitter .content-twitter {
+	color: #fff;
+	margin: 0 auto;
+	width: 50%; 
+}
+
+.twitter .fa-twitter,
+.fa-angle-right {
+	font-size: 28px;
+}
+
+.twitter .icon,
+.twitter .text-twitter {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.twitter .icon {
+	right: 0px;
+    position: absolute;
+}
+
+.text-twitter {
+	margin-left: 20px;
+}
+
+/**media queries**/
+
+	/**max-width**/
+
+@media screen and (max-width: 1576px) {
+	.twitter .content-twitter {
+		width: 70%; 
+	}
+}
+
+@media screen and (max-width: 1415px) {
+	.twitter .content-twitter {
+		width: 70%; 
+	}
+	.twitter .icon {
+		top: 20px;
+	}
+}
+
+
+@media screen and (max-width: 991px) {
+	header .container {
+		width: 100% !important;
+	}
+
+	.twitter .icon {
+		position: relative;
+	}
+
+	.standard {
+	    margin: 30px 0px;
+	}
+
+	.servicios .container {
+		width: 90%;
+	}
+
+	.site-white, .site-blue {
+		margin: 20px 0px;
+	}
+
+	.site-blue {
+		text-align: right;
+	}
+}
+
+@media screen and (max-width: 820px) {
+	.navbar-toggle {
+		
+	}
+	.navbar-collapse.collapse {
+		
+	}
+}
+
+@media screen and (max-width: 656px) {
+	.twitter .content-twitter {
+		width: 90%;
+	}
+}
+
+	/**min-width**/
+@media screen and (min-width: 1577px) {
+	.twitter .content-twitter {
+		width: 90%; 
+	}
+}
